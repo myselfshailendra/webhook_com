@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<%= link_to "Create New Product", new_product_path, class: "btn" %>
+
+<h1>Products</h1>
+<hr/>
+<table id="products">
+  <thead>
+    <tr class="title_bk">
+      <th class="p5 w100 left"> Name </th>
+      <th class="p5 w200 left"> Description </th>
+      <th class="p5"> Action </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <%= render product %>
+    <% end %>
+  </tbody>
+</table>

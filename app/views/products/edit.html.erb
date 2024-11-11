@@ -1,0 +1,9 @@
+<h1>Edit Product</h1>
+<%= link_to "See Product Details", @product, class: "btn" %>
+<hr/>
+
+<%= render "form", product: @product %>
+<br>
+
+<hr/>
+<%= link_to "Back to Products List", products_path, class: "btn" %>

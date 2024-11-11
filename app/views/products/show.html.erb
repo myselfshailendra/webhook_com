@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+
+<h1>Product Details</h1>
+<%= link_to "Edit Details", edit_product_path(@product), class: "btn" %> |
+<%= link_to "Back to Products List", products_path, class: "btn" %>
+<hr/>
+
+<table id="products">
+  <tr>
+    <td class="title_bk p5 w100"> Name </td>
+    <td> <%= @product.name %> </td>
+  </tr>
+  <tr>
+    <td class="title_bk p5 w100"> Description </th>
+    <td> <%= @product.description %> </td>  
+  </tr>
+</table>
+
+<hr/>
+
+<%= button_to "Delete", @product, method: :delete, data: {turbo_confirm: "Are you sure?"} %>

@@ -1,0 +1,15 @@
+.title_bk { background-color: #ededed; }
+.p5 { padding: 5px; }
+.w100 { width: 100px; }
+.w200 { width: 200px; }
+.left { text-align: left; }
+.btn {     
+  color: white;
+  background-color: #9e7cad;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #d68df5;
+}
